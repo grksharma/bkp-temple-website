@@ -1322,3 +1322,13 @@ html.js .reveal.is-visible {
 
   a { color: #000; }
 }
+
+/* ==========================================================================
+   Anti-FOUC — hold the first paint until js/main.js applies the chosen
+   language (Telugu by default). The inline head script on each page adds
+   .lang-pending before the body renders; boot() removes it, and a 1.5s
+   timeout in that inline script guarantees the page is never stuck hidden
+   if the script fails to load. Users without JavaScript never get the class,
+   so they see the source content normally.
+   ========================================================================== */
+html.lang-pending body { visibility: hidden; }

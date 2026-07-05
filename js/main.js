@@ -112,9 +112,11 @@ const FESTIVALS = [
 
   function storedLang() {
     try {
-      return localStorage.getItem(LANG_KEY) === 'te' ? 'te' : 'en';
+      // Default to Telugu (most devotees are Telugu speakers); only honour an
+      // explicit saved English choice from a previous visit.
+      return localStorage.getItem(LANG_KEY) === 'en' ? 'en' : 'te';
     } catch (e) {
-      return 'en';
+      return 'te';
     }
   }
 
@@ -460,6 +462,8 @@ const FESTIVALS = [
     initNav();
     initReveal();
     initLightbox();
+    // Reveal the page now that the correct language is applied (anti-FOUC).
+    root.classList.remove('lang-pending');
   }
 
   if (doc.readyState === 'loading') {
