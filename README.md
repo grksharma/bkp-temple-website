@@ -53,50 +53,54 @@ robots.txt        For search engines.
 
 ## 3. ★ Before you publish — the EDIT-ME checklist
 
-Open each file in a plain text editor (Notepad, TextEdit, VS Code) and search for
-`EDIT-ME`. Each one is a comment telling you exactly what to put and in what format.
-There are **108** of them; they fall into these groups:
+**Good news — most of the core data has already been filled in** from the temple's
+**2026 Brahmotsavam invitation**. Already done and live on the site:
 
-### A. Phone & WhatsApp numbers (most important)
-- **Where:** `partials/header.html`, `partials/footer.html`, and inside `sevas.html`,
-  `donations.html`, `visit.html`, `gallery.html`. The footer/header numbers repeat on
-  **every** page, so if you edit the header/footer text, make the **same** change on all
-  8 HTML pages (they each contain their own copy).
-- **What:** replace `+91XXXXXXXXXX` (in the link) **and** the visible `+91 XXXXX XXXXX`
-  with the real number.
-  - Phone link format: `tel:+91` then the 10 digits, no spaces → `tel:+919999999999`
-  - WhatsApp link format: `https://wa.me/91` then the 10 digits → `https://wa.me/919999999999`
+- ✅ The deity's proper name — **Sri Guntuka Lakshmi Narasimha Swamy** (శ్రీ గుంటుక లక్ష్మీ
+  నరసింహ స్వామి) — used across every page, with the meaning of "Guntuka" explained.
+- ✅ The temple's **founding story / sthala puranam** (the ~312-year-old swayambhu stone,
+  the farmer Sayinni Narsayya, the dream of Karmam Ramayya Pantulu, the Gannoju family) —
+  on the About page, in English and Telugu.
+- ✅ The **moolavirat** description (swayambhu; the stone grew to fill the sanctum).
+- ✅ **Phone numbers** — Archakulu Gorenta Narasimha Sharma (89781 72136), Sarpanch / committee
+  Baikani Shamanta – Yadayya Yadav (94409 28385), and the temple cell (96180 54672).
+- ✅ **Bank details** for donations — State Bank of India, Keshampet branch, A/c 37611249654,
+  IFSC SBIN0022054.
+- ✅ The full **6-day Brahmotsavam / Jatara programme** (Dhwajarohanam through Chakratheertham,
+  bull races, chariots, plays) — on the Festivals page.
+- ✅ The **Telugu village spelling** corrected to **బైర్ఖాన్‌పల్లి**.
 
-### B. Donation / e-Hundi details — `donations.html`
-- Bank account **name (exactly as printed on the passbook)**, bank & branch, account
-  number, IFSC, and the UPI ID.
-- A real **UPI QR code** image (see the placeholder frame on the page).
-- **Do not** add any income-tax / 80G claim unless the temple actually holds an 80G
-  certificate — the site deliberately makes no tax claim. If you get 80G, a developer can
-  add the registration number and PAN properly.
-- Always keep the account-holder name visible next to the QR so donors can verify it.
+**What still needs you** (search the files for `EDIT-ME` — far fewer now):
 
-### C. The temple's own story — `about.html`
-- There is an `EDIT-ME` block for the temple's **founding history, who installed the
-  deity, and local legends**. This was left blank on purpose — please add what the elders
-  and archakulu know. The details about the *deity/avatara* and the *village* are already
-  filled in and sourced.
-- Confirm the **moolavirat description** (how the Lord appears in the sanctum).
+### A. Real photographs (the biggest remaining item)
+- The gallery shows hand-drawn illustrations. Replace them with real photos — see section 4
+  below. Also add an `og-image.jpg` (a wide gopuram/deity photo) so shared links show a nice
+  preview.
 
-### D. Timings & sevas — `timings.html`, `sevas.html`
-- The daily schedule, seva list and prices are sensible **defaults modelled on the
-  Yadadri and Mattapalli temples** (see `research.json`). Confirm each timing, each seva,
-  and each price with the committee and the archakulu, and edit freely.
+### B. A few donation details — `donations.html`
+- The exact **bank account name** as registered (the invitation printed the account number
+  and IFSC but not the name) — fill the "Account name" row and confirm it.
+- Optionally add the temple's real **UPI QR image** (the page currently points donors to the
+  bank transfer and the temple cell). The QR is not reproduced from the pamphlet on purpose,
+  so no wrong code can ever be scanned.
+- The page makes **no 80G / tax claim** by design; only add one if the temple holds a
+  certificate (then a developer can add the registration number and PAN properly).
 
-### E. Announcements & festival dates — `js/main.js` (top of the file)
-- `ANNOUNCEMENTS` — the scrolling line at the very top of every page. Keep one short line
-  (e.g. a coming festival). This is the one place dated notices belong.
-- `FESTIVALS` — fill in each year's date (from the panchangam) to power the "next
-  festival" countdown. Wrong dates are worse than none — verify with the purohit.
+### C. Prices & daily hours — `sevas.html`, `timings.html`
+- The **seva prices** and the **regular (non-festival) daily darshan hours** are still
+  sensible defaults modelled on Yadadri/Mattapalli (the invitation only lists festival-day
+  timings). Confirm them with the committee and the archakulu, and edit freely.
 
-### F. The Telugu village-name spelling
-- The site uses **భైర్ఖాన్‌పల్లి**. Confirm this spelling with the committee (footer has
-  an `EDIT-ME` note).
+### D. Festival dates each year — `js/main.js` (top of the file)
+- `FESTIVALS` — fill in each year's dates (from the panchangam) to power the "next festival"
+  countdown. The Brahmotsavam falls in Phalguna masam (Feb–Mar). Wrong dates are worse than
+  none — verify with the purohit.
+- `ANNOUNCEMENTS` — the scrolling line at the top of every page, for the next festival or a
+  timing change.
+
+### E. Optional finishing touches
+- Confirm the **utsava murti** and **dhwaja sthambham** descriptions on the About page.
+- Add a door number / landmark line to the address on the Visit page if there is one.
 
 ---
 

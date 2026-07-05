@@ -54,7 +54,7 @@ const FESTIVALS = [
     en: 'Annual Brahmotsavam & Jatara',
     te: 'బ్రహ్మోత్సవం / జాతర',
     date: '',
-    note: 'Dates fixed by panchangam (usually February–April)'
+    note: 'Phalguna Shuddha Saptami–Dvadasi (February–March); six days'
   },
   {
     en: 'Sri Rama Navami',
