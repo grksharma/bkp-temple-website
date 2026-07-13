@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!-- ==========================================================================
+     donors.html — Donors & Well-wishers (దాతలు)
+     Sri Guntuka Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+
+     Every name here is transcribed from the temple's 2026 Brahmotsavam invitation.
+     Names are proper nouns kept in Telugu (lang="te") and are NOT toggled to English.
+     Donor-name spelling is sensitive — the committee should verify each name against
+     the printed invitation; corrections can be sent to the temple cell.
+     Chrome (header/footer) is injected identically to the other pages.
+     ========================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donors &amp; Well-wishers · Sri Guntuka Lakshmi Narasimha Swamy Temple, Bhairkhanpally</title>
+  <meta name="description" content="With gratitude — the donors, organisers and well-wishers of the 2026 Brahmotsavam of Sri Guntuka Lakshmi Narasimha Swamy Temple, Bhairkhanpally: chief guests, temple committee, development donors, annadanam and prize sponsors.">
+  <meta property="og:title" content="Donors &amp; Well-wishers · శ్రీ గుంటుక లక్ష్మీ నరసింహ స్వామి దేవాలయం, Bhairkhanpally">
+  <meta property="og:description" content="శ్రీ గుంటుక లక్ష్మీ నరసింహ స్వామి 2026 బ్రహ్మోత్సవ అభివృద్ధి దాతలు, అన్నదాతలు, ముఖ్య అతిథులు, ఆలయ కమిటీకి కృతజ్ఞతలు.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Mulish:wght@400;500;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif+Telugu:wght@500;700&family=Noto+Sans+Telugu:wght@400;500&family=Noto+Serif+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Apply the saved/default language (Telugu) before first paint; see css .lang-pending -->
+  <script>(function(h){h.className+=(h.className?' ':'')+'lang-pending';setTimeout(function(){h.classList.remove('lang-pending');},1500);})(document.documentElement)</script>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Page-scoped additions for donors.html only. Tokens only; nothing here
+       overrides shared components or focus styles. */
+    .donor-note { max-width: 44rem; margin: 0 auto var(--space-4);
+      border: var(--hairline-dark); border-radius: var(--radius-card); padding: var(--space-4); }
+    .donor-note p { margin: 0; }
+    .donor-note p + p { margin-top: var(--space-2); }
+
+    .roll { list-style: none; padding: 0; margin: var(--space-3) 0 0; }
+    @media (min-width: 680px) { .roll--multi { column-count: 2; column-gap: var(--space-6); } }
+    @media (min-width: 1040px) { .roll--multi { column-count: 3; } }
+    .roll li { break-inside: avoid; display: flex; justify-content: space-between;
+      align-items: baseline; gap: 1rem; padding: .5rem 0;
+      border-bottom: 1px solid rgba(201, 162, 39, .16); }
+    .roll .nm { line-height: 1.5; }
+    .roll .amt { color: var(--maroon); font-variant-numeric: tabular-nums;
+      white-space: nowrap; font-weight: 500; }
+    /* Roles list (committee / annadanam): role label above the name */
+    .roll--roles li { flex-direction: column; gap: .15rem; }
+    .roll--roles .role { color: var(--ink-soft); font-size: .8125rem;
+      letter-spacing: .04em; text-transform: uppercase; }
+    .roll--roles .nm { font-size: 1.0625rem; }
+    .roll--roles .sub { color: var(--ink-soft); font-size: .875rem; }
+
+    .honor-lead .amt { font-weight: 700; }
+    .thanks-line { font-family: var(--font-quote); font-style: italic; font-size: 1.125rem;
+      text-align: center; max-width: 34rem; margin: var(--space-6) auto 0; color: var(--maroon); }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main" data-en="Skip to content" data-te="ప్రధాన విషయానికి వెళ్లండి">Skip to content</a>
+
+<!-- Announcement strip: js/main.js renders the ANNOUNCEMENTS array (top of
+     js/main.js) into [data-announcements]. The line below is the no-JS
+     fallback and should mirror the first ANNOUNCEMENTS entry. -->
+<div class="announce" role="region" aria-label="Temple announcements">
+  <div class="container announce__inner">
+    <svg class="announce__diya" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#E3C363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.5 19.5 H25.5 C24.8 24.2 20.9 26.4 16 26.4 C11.1 26.4 7.2 24.2 6.5 19.5 Z"/>
+      </g>
+      <path d="M16 8 C18.6 11.8 18.8 14.9 16 18 C13.2 14.9 13.4 11.8 16 8 Z" fill="#E8A13D"/>
+    </svg>
+    <p class="announce__text" data-announcements>
+      <span data-en="Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp"
+            data-te="నిత్య దర్శనం: ఉదయం 6:00 – మధ్యాహ్నం 12:00, సాయంత్రం 5:00 – రాత్రి 8:00 · సేవల బుకింగ్ ఫోన్ / వాట్సాప్ ద్వారా">Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp</span>
+    </p>
+    <!-- Temple cell — general enquiries and online donations (from the 2026 Brahmotsavam invitation). -->
+    <a class="announce__call" href="tel:+919618054672"><span>+91 96180 54672</span></a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+
+    <a class="brand" href="index.html">
+      <img class="brand__emblem" src="assets/emblem.svg" alt="" width="34" height="34">
+      <span class="brand__names">
+        <span class="brand__te te-display" lang="te">శ్రీ గుంటుక లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+        <span class="brand__en" lang="en">Sri Guntuka Lakshmi Narasimha Swamy Temple · Bhairkhanpally</span>
+      </span>
+    </a>
+
+    <div class="site-header__actions">
+      <button type="button" class="lang-toggle" data-lang-toggle aria-pressed="false"
+              aria-label="Switch language between English and Telugu">
+        <span class="lang-toggle__label" lang="te">తెలుగు</span>
+      </button>
+      <a class="btn btn--primary btn--sm" href="donations.html" data-en="Donate" data-te="విరాళాలు">Donate</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-controls="site-nav"
+              aria-expanded="false" aria-label="Menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="about.html" data-en="About" data-te="ఆలయ చరిత్ర">About</a></li>
+        <li><a href="timings.html" data-en="Timings" data-te="దర్శన వేళలు">Timings</a></li>
+        <li><a href="sevas.html" data-en="Sevas" data-te="సేవలు">Sevas</a></li>
+        <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="donors.html" aria-current="page" data-en="Donors" data-te="దాతలు">Donors</a></li>
+        <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+        <li><a href="visit.html" data-en="Visit" data-te="దర్శనం">Visit</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+  <main id="main">
+
+    <!-- HERO (short) -->
+    <section class="hero hero--short" aria-label="Donors and well-wishers">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__content">
+        <span class="hero__kicker" lang="en">Sri Guntuka Lakshmi Narasimha Swamy · Brahmotsavam 2026</span>
+        <h1>
+          <span class="hero__title-te te-display" lang="te">దాతలు</span>
+          <span class="hero__title-en" lang="en">Donors &amp; Well-wishers</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Intro + gratitude + verification note -->
+    <section class="section" aria-labelledby="donors-intro-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">01</span> · <span lang="te">కృతజ్ఞతలు</span> — With Gratitude</span>
+          <h2 class="section__title" id="donors-intro-title" data-en="With Gratitude" data-te="కృతజ్ఞతలు">With Gratitude</h2>
+          <span class="section__sub" lang="te">అందరూ ఆహ్వానితులే</span>
+        </div>
+
+        <div class="donor-note reveal">
+          <p data-lang="en">The Brahmotsavam of Sri Guntuka Lakshmi Narasimha Swamy is the whole
+            village's festival. The temple committee and village offer heartfelt thanks to every
+            chief guest, donor, organiser and well-wisher — named below from the 2026 Brahmotsavam
+            invitation — for their seva, both in kind and in cash. May the Swamy bless them all.</p>
+          <p data-lang="te" lang="te" hidden>శ్రీ గుంటుక లక్ష్మీ నరసింహ స్వామివారి బ్రహ్మోత్సవం
+            ఊరందరి పండుగ. వస్తు రూపేన, ధన రూపేన సహాయ సహకారాలు అందించిన ముఖ్య అతిథులకు, దాతలకు,
+            నిర్వాహకులకు, శ్రేయోభిలాషులకు — 2026 బ్రహ్మోత్సవ ఆహ్వాన పత్రిక నుంచి కింద పేర్కొన్నవారికి —
+            ఆలయ కమిటీ, గ్రామ ప్రజల తరఫున హృదయపూర్వక ధన్యవాదములు. స్వామివారి కృపకు అందరూ పాత్రులు
+            కాగలరని ప్రార్థన.</p>
+          <p class="small" data-lang="en"><em>Note:</em> these names are transcribed from the printed
+            invitation. If any name needs correcting, please call the temple cell
+            <a href="tel:+919618054672">+91&nbsp;96180&nbsp;54672</a>.</p>
+          <p class="small" data-lang="te" lang="te" hidden><em>గమనిక:</em> ఈ పేర్లు ముద్రిత ఆహ్వాన
+            పత్రిక నుంచి తీసుకోబడ్డాయి. ఏదైనా పేరు సరిచేయవలసి ఉంటే ఆలయ సెల్
+            <a href="tel:+919618054672">+91&nbsp;96180&nbsp;54672</a> కు తెలియజేయగలరు.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation"><img src="assets/divider.svg" alt="" width="240" height="24"></div>
+
+    <!-- Chief Guests -->
+    <section class="section" aria-labelledby="guests-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">02</span> · <span lang="te">ముఖ్య అతిథులు</span> — Chief Guests</span>
+          <h2 class="section__title" id="guests-title" data-en="Chief Guests" data-te="ముఖ్య అతిథులు">Chief Guests</h2>
+        </div>
+        <ul class="roll roll--roles roll--multi">
+          <li><span class="role" data-en="Member of Parliament" data-te="ఎంపీ">Member of Parliament</span><span class="nm" lang="te">డి.కె. అరుణ</span></li>
+          <li><span class="role" data-en="MLC" data-te="ఎమ్మెల్సీ">MLC</span><span class="nm" lang="te">నవీన్ రెడ్డి</span></li>
+          <li><span class="role" data-en="MLA, Shadnagar" data-te="ఎమ్మెల్యే, షాద్‌నగర్">MLA, Shadnagar</span><span class="nm" lang="te">విర్లపల్లి శంకరయ్య</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation"><img src="assets/divider.svg" alt="" width="240" height="24"></div>
+
+    <!-- Committee & Village Officials -->
+    <section class="section section--cream" aria-labelledby="committee-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">03</span> · <span lang="te">ఆలయ కమిటీ &amp; గ్రామ అధికారులు</span> — Committee &amp; Officials</span>
+          <h2 class="section__title" id="committee-title" data-en="Temple Committee &amp; Village Officials" data-te="ఆలయ కమిటీ &amp; గ్రామ అధికారులు">Temple Committee &amp; Village Officials</h2>
+        </div>
+        <ul class="roll roll--roles roll--multi">
+          <li><span class="role" data-en="Archakulu (Priest) · hereditary dharmakarta" data-te="అర్చకులు · అనువంశిక ధర్మకర్త">Archakulu (Priest)</span><span class="nm" lang="te">గోరెంట నరసింహ శర్మ</span></li>
+          <li><span class="role" data-en="Sarpanch" data-te="సర్పంచ్">Sarpanch</span><span class="nm" lang="te">బైకని శమంత – యాదయ్య యాదవ్</span><span class="sub" lang="te">కుమారుడు: శివ కుమార్ యాదవ్</span></li>
+          <li><span class="role" data-en="Upa-Sarpanch" data-te="ఉప సర్పంచ్">Upa-Sarpanch</span><span class="nm" lang="te">సభావత్ ధన్‌సింగ్</span></li>
+          <li><span class="role" data-en="Gram Panchayat (G.P.O.)" data-te="గ్రామ పంచాయతి జి.పి.ఓ.">Gram Panchayat (G.P.O.)</span><span class="nm" lang="te">సేవ్యా నాయక్</span></li>
+          <li><span class="role" data-en="Village Secretary" data-te="గ్రామ కార్యదర్శి">Village Secretary</span><span class="nm" lang="te">యాదయ్య</span></li>
+        </ul>
+
+        <h3 style="margin-top: var(--space-6)" data-en="Temple Committee Members" data-te="ఆలయ కమిటీ సభ్యులు">Temple Committee Members</h3>
+        <ul class="roll roll--roles roll--multi">
+          <li><span class="nm" lang="te">యం. జ్ఞానేశ్వర్</span></li>
+          <li><span class="nm" lang="te">ఎల్. యాదగిరి రావు</span><span class="sub"><a href="tel:+919948016144">+91&nbsp;99480&nbsp;16144</a></span></li>
+          <li><span class="nm" lang="te">ఎస్. రాఘవేందర్ రావు</span><span class="sub"><a href="tel:+919951206389">+91&nbsp;99512&nbsp;06389</a></span></li>
+          <li><span class="nm" lang="te">బి. వెంకటేష్ యాదవ్</span><span class="sub"><a href="tel:+919951020196">+91&nbsp;99510&nbsp;20196</a></span></li>
+          <li><span class="nm" lang="te">డి. బాబు యాదవ్</span><span class="sub"><a href="tel:+919912080563">+91&nbsp;99120&nbsp;80563</a></span></li>
+          <li><span class="nm" lang="te">జి. ద్రోణాచారి</span><span class="sub"><a href="tel:+919951250839">+91&nbsp;99512&nbsp;50839</a></span></li>
+          <li><span class="nm" lang="te">జి. యాదగిరి ఆచారి</span><span class="sub"><a href="tel:+919912586833">+91&nbsp;99125&nbsp;86833</a></span></li>
+        </ul>
+        <p class="small" style="margin-top: var(--space-4)" data-lang="en">Also with the help and
+          cooperation of the village elders, ward members, former sarpanchs and panchayat members,
+          youth associations and the people of Bhairkhanpally.</p>
+        <p class="small" style="margin-top: var(--space-4)" data-lang="te" lang="te" hidden>గ్రామ
+          పెద్దలు, వార్డు మెంబర్లు, మాజీ సర్పంచులు, మాజీ పంచాయతి సభ్యులు, యూత్ సభ్యులు, బైర్ఖాన్‌పల్లి
+          గ్రామ ప్రజల సహాయ సహకారాలతో.</p>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation"><img src="assets/divider.svg" alt="" width="240" height="24"></div>
+
+    <!-- Development Donors 2026 -->
+    <section class="section" aria-labelledby="devdonors-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">04</span> · <span lang="te">అభివృద్ధి దాతలు – 2026</span> — Development Donors</span>
+          <h2 class="section__title" id="devdonors-title" data-en="Temple Development Donors — 2026" data-te="ఆలయ అభివృద్ధి దాతలు – 2026">Temple Development Donors — 2026</h2>
+          <span class="section__sub" lang="te">అభివృద్ధి దాతలు</span>
+        </div>
+        <ul class="roll roll--multi">
+          <li><span class="nm" lang="te">వై. అంజయ్య యాదవ్, మాజీ శాసన సభ్యులు (ఎమ్మెల్యే), ఎక్సాఖాన్‌పేట</span></li>
+          <li><span class="nm" lang="te">కె. వెంకట్ రెడ్డి, బైర్ఖాన్‌పల్లి (హైదరాబాద్)</span><span class="amt">₹1,01,516</span></li>
+          <li><span class="nm" lang="te">కొట్టం శశివర్ధన్ రెడ్డి, మంగళగూడెం</span><span class="amt">₹1,01,116</span></li>
+          <li><span class="nm" lang="te">డా. సాంబశివ రావు, హైదరాబాద్</span><span class="amt">₹1,00,000</span></li>
+          <li><span class="nm" lang="te">మనోజ్ కనోడియా, హైదరాబాద్</span><span class="amt">₹51,000</span></li>
+          <li><span class="nm" lang="te">కావలి రాఘవేందర్, సుఖాన్‌పూర్</span><span class="amt">₹50,000</span></li>
+          <li><span class="nm" lang="te">కొండాని లక్ష్మణ్, కల్వకోల్</span><span class="amt">₹50,000</span></li>
+          <li><span class="nm" lang="te">టి. విశాల ప్రవీణ్ రెడ్డి, మాజీ ZPTC కేశంపేట</span><span class="amt">₹25,116</span></li>
+          <li><span class="nm" lang="te">వర్మ – వెంకటేష్ యాదవ్, మాజీ సర్పంచ్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹25,116</span></li>
+          <li><span class="nm" lang="te">శ్రీనివాసులు, హండగూడెం</span><span class="amt">₹25,000</span></li>
+          <li><span class="nm" lang="te">పట్టిపు రామకృష్ణ, హైదరాబాద్</span><span class="amt">₹21,000</span></li>
+          <li><span class="nm" lang="te">బిల్లి రాధాకృష్ణ, హైదరాబాద్</span><span class="amt">₹21,000</span></li>
+          <li><span class="nm" lang="te">జయసుంద ఎల్. నాగేష్, హైదరాబాద్</span><span class="amt">₹21,000</span></li>
+          <li><span class="nm" lang="te">వర్ల లక్ష్మీ నారాయణ గౌడ్, మాజీ MPP లింగందాస్</span><span class="amt">₹21,000</span></li>
+          <li><span class="nm" lang="te">గాదెకాడి అడివయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹15,000</span></li>
+          <li><span class="nm" lang="te">దన్నెడి విలేష్ యాదవ్, కూకట్‌పల్లి</span><span class="amt">₹13,000</span></li>
+          <li><span class="nm" lang="te">బత్తుల రాజు యాదవ్, మన్సాన్‌పల్లి</span><span class="amt">₹13,000</span></li>
+          <li><span class="nm" lang="te">బి. మనీలా – యాదగిరి యాదవ్, మాజీ వార్డు మెంబర్</span><span class="amt">₹11,116</span></li>
+          <li><span class="nm" lang="te">డి. బాబు యాదవ్, మాజీ వార్డు మెంబర్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,116</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి యాదగిరి – విజయ్ కుమార్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,116</span></li>
+          <li><span class="nm" lang="te">బందం గణేష్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,116</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి బాల్‌రాజ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,111</span></li>
+          <li><span class="nm" lang="te">జి. ద్రోణాచారి, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">గన్నోజు జగదీశ్వరాచారి – శ్రీనివాసాచారి, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">లంకల సురేష్ రెడ్డి, సర్పంచ్, అల్లాపల</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">మంగలి శంకరయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">యం. జ్ఞానేశ్వర్, మాజీ ఉప సర్పంచ్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి శ్రీనివాసులు, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">నర్సింగ్ రావు, మాజీ ZPTC కొండారెడ్డిపల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">బి. అశోక్ యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">సభావత్ ధన్‌సింగ్, ఉప సర్పంచ్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">బి. శివ కుమార్ యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి సుధాకర్, దుబ్బచర్ల</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">వెంకట్ రెడ్డి, మణిక్యమ్మగూడ</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">మల్తుంకార్ అఖిల్, తండ్రి సబ్జనలాల్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">బైకని మల్లేష్, తండ్రి కృష్ణయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి అంజయ్య, తండ్రి రంగయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి బాలకిష్టయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">గుండెగల్ల జంగయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">ఎస్.కె. బాజా, సిద్ధాపూర్</span><span class="amt">₹11,000</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి వెంకటేష్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,555</span></li>
+          <li><span class="nm" lang="te">డ్యూక్స్ గార్డెన్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,116</span></li>
+          <li><span class="nm" lang="te">గుమ్మకొండ భూపాల్ రెడ్డి, హైదరాబాద్</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">మక్కూరి మహేష్ యాదవ్, వార్డు మెంబర్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">ఎల్. యాదగిరి రావు, మాజీ సర్పంచ్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">బి. అశ్విని – ప్రకాష్ యాదవ్, వార్డు మెంబర్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">గన్నోజు పురుషోత్తమాచారి, బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">గన్నోజు విఠలాచారి, బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">బైకని సిద్దూ యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">సభావత్ గోవింద్ నాయక్, వార్డు మెంబర్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">గుండెగల్ల యాదగిరి, వార్డు మెంబర్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి శివ రాజు, బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="nm" lang="te">సాయిని సురేందర్ రావు, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,555</span></li>
+          <li><span class="nm" lang="te">నాయికోటి వనజ – శ్యామ్‌సుందర్ రావు, మెదక్</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">మల్లిరెడ్డి శ్రీనివాస్ రెడ్డి, హైదరాబాద్</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">డా. కనపర్తి వెంకట మురళీధర్, హైదరాబాద్</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">వద్త్యావత్ సీత్యా నాయక్ – చందర్ నాయక్, టి.తండా</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">విక్రమ్ రెడ్డి, తండ్రి కృష్ణారెడ్డి, సిద్దాపూర్</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">పి. కుమార్ యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">కొట్టం సుధాకర్ రెడ్డి, మంగళగూడ</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">పడకంటి రంగయ్య, ఉద్దేల్</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">పడకంటి సత్తయ్య, ఉద్దేల్</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి కృష్ణ, పెండ్యాల</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">నల్లోలు మహేందర్ రెడ్డి, తండ్రి రాంచంద్రా రెడ్డి, తలవానిగడ్డ</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">ఎస్. రూప్లా నాయక్, మాజీ సర్పంచ్ బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">గుండె గోపాల్ యాదవ్, కవాడిగూడ, సికింద్రాబాద్</span><span class="amt">₹5,116</span></li>
+          <li><span class="nm" lang="te">అభిలాష్ గౌడ్, రాంచంద్రాగూడ</span><span class="amt">₹5,100</span></li>
+          <li><span class="nm" lang="te">మంగలి సత్యనారాయణ, తండ్రి లక్ష్మయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,100</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి రాజు చారి, గొల్లపల్లి</span><span class="amt">₹5,011</span></li>
+          <li><span class="nm" lang="te">సి. వెంకటేష్, తండ్రి పెద్ద జంగయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">బైకని శ్రీశైలం యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">బింకల అంజయ్య, ఎక్సాఖాన్‌పేట</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">బి. రాములు యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">కుమ్మరి వెంకటయ్య, తండ్రి కృష్ణయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">సభావత్ లక్ష్మీ – రాజు నాయక్, వార్డు మెంబరు బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">పద్మమ్మ – కృష్ణయ్య, వార్డు మెంబర్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">సభావత్ భాస్కర్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">రాయకంటి రాంచంద్రయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">వట్టెల అంజయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">సాకలి పెద్ద యాదయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">జి. కృష్ణయ్య, మాజీ సర్పంచ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">సైయద్ వాహిద్ అలీ, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">మంగళి శ్రీకాంత్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">బి. లక్ష్మయ్య యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">సభావత్ చందర్ నాయక్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">కేతావత్ హరికిషన్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">బి. మల్లేష్ యాదవ్, తండ్రి పర్వతయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">బి. శ్రీనివాసులు యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">బి. శ్రీశైలం యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">బి. కుమార్ యాదవ్, తండ్రి మల్లయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">తంగోతు శ్రీను, రాంచంద్రాగూడ</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">కమ్లికార్ ఈశ్వర్ జి, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">గాదెకాడి జంగయ్య, తండ్రి చిన్న అగయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">కె. సిద్దేశ్వర్ గౌడ్, రాంచంద్రాగూడ</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">డా. కదరు అనసూయ, హైదరాబాద్</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">వద్త్యావత్ సేవ్యా నాయక్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">జి. నర్సింహ్మ, మాజీ ఉప సర్పంచ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">చిన్న అంజనేయులు గౌడ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">బాలు శ్రీ సాయి సీడ్స్, పెస్టిసైడ్స్ &amp; ఫర్టిలైజర్స్, కొత్తపేట</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">గాదెకాడి వెంకటేష్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation"><img src="assets/divider.svg" alt="" width="240" height="24"></div>
+
+    <!-- Annadanam & Utsava-day Sponsors -->
+    <section class="section" aria-labelledby="anna-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">05</span> · <span lang="te">అన్నదాతలు</span> — Annadanam Sponsors</span>
+          <h2 class="section__title" id="anna-title" data-en="Annadanam &amp; Utsava-day Sponsors" data-te="అన్నదాతలు (ఉత్సవ దినాల వారీగా)">Annadanam &amp; Utsava-day Sponsors</h2>
+        </div>
+        <ul class="roll roll--roles roll--multi">
+          <li><span class="role" data-en="Kalyanam day" data-te="కల్యాణం రోజు">Kalyanam day</span><span class="nm" lang="te">సంతపూరు చిదంబర శర్మ, కొత్తపేట</span></li>
+          <li><span class="role" data-en="Seva day" data-te="సేవ రోజు">Seva day</span><span class="nm" lang="te">సభావత్ ధన్‌సింగ్ (ఉప సర్పంచ్); గుండెగల్ల అంజయ్య, బైర్ఖాన్‌పల్లి</span><span class="sub" lang="te">జి. మణెమ్మ మాజీ ఉప సర్పంచ్ గారి కుమారుడు</span></li>
+          <li><span class="role" data-en="Chinnateru day · morning" data-te="చిన్న రథం రోజు · ఉదయం">Chinnateru day · morning</span><span class="nm" lang="te">కుమ్మరి ప్రవీణ్, కందుకూరు; కుమ్మరి మైబు, ఊరుకొండపేట; ప్రభాకర్, అల్మాస్‌గూడ</span></li>
+          <li><span class="role" data-en="Chinnateru day · evening" data-te="చిన్న రథం రోజు · సాయంత్రం">Chinnateru day · evening</span><span class="nm" lang="te">కుమ్మరి వసంత – వెంకటేష్ (నవ వార్డు మెంబరు), తండ్రి కీ.శే. లక్ష్మయ్య, బైర్ఖాన్‌పల్లి</span></li>
+          <li><span class="role" data-en="Peddateru day · morning" data-te="పెద్ద రథం రోజు · ఉదయం">Peddateru day · morning</span><span class="nm" lang="te">గుర్రంపల్లి పుష్పమ్మ – కీ.శే. కృష్ణయ్య, మాణిక్యమ్మగూడ</span></li>
+          <li><span class="role" data-en="Peddateru day · evening" data-te="పెద్ద రథం రోజు · సాయంత్రం">Peddateru day · evening</span><span class="nm" lang="te">కొల్లారి బుచ్చయ్య గుప్త, వెముల్‌సర్పా</span></li>
+          <li><span class="role" data-en="Banda day · morning" data-te="బండ రోజు · ఉదయం">Banda day · morning</span><span class="nm" lang="te">బైకని మనీలా – యాదగిరి (బి.ఆర్.ఎస్. గ్రామ అధ్యక్షులు), బైర్ఖాన్‌పల్లి</span></li>
+          <li><span class="role" data-en="Banda day · evening" data-te="బండ రోజు · సాయంత్రం">Banda day · evening</span><span class="nm" lang="te">ఇ. వర్మ వెంకటేష్ యాదవ్ (మాజీ సర్పంచ్), బైర్ఖాన్‌పల్లి</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation"><img src="assets/divider.svg" alt="" width="240" height="24"></div>
+
+    <!-- Prize, Decoration & Kind Donors -->
+    <section class="section section--cream" aria-labelledby="prize-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">06</span> · <span lang="te">పోటీలు, అలంకరణ &amp; వస్తు దాతలు</span> — Prizes, Decoration &amp; Kind</span>
+          <h2 class="section__title" id="prize-title" data-en="Prize, Decoration &amp; Kind Donors" data-te="పోటీల బహుమతి, అలంకరణ &amp; వస్తు దాతలు">Prize, Decoration &amp; Kind Donors</h2>
+        </div>
+        <ul class="roll roll--roles roll--multi">
+          <li><span class="role" data-en="Cricket tournament" data-te="క్రికెట్ టోర్నమెంట్">Cricket tournament</span><span class="nm" lang="te">కేశమోని శ్రీనివాస్ యాదవ్, నందిగామ</span><span class="amt">₹50,000</span></li>
+          <li><span class="role" data-en="Bull race · 1st prize" data-te="బండలాగుట · మొదటి బహుమతి">Bull race · 1st prize</span><span class="nm" lang="te">వై. అంజయ్య యాదవ్, మాజీ శాసన సభ్యులు, షాద్‌నగర్</span><span class="amt">₹75,000</span></li>
+          <li><span class="role" data-en="Bull race · 1st prize" data-te="బండలాగుట · మొదటి బహుమతి">Bull race · 1st prize</span><span class="nm" lang="te">చౌలపల్లి ప్రతాప్ రెడ్డి, మాజీ MLA షాద్‌నగర్</span><span class="amt">₹1,02,516</span></li>
+          <li><span class="role" data-en="Bull race · 2nd prize" data-te="బండలాగుట · రెండవ బహుమతి">Bull race · 2nd prize</span><span class="nm" lang="te">బైకని శమంత (సర్పంచ్) – కుమారుడు శివ కుమార్ యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹50,000</span></li>
+          <li><span class="role" data-en="Bull race · 3rd prize" data-te="బండలాగుట · మూడవ బహుమతి">Bull race · 3rd prize</span><span class="nm" lang="te">జి. జగదీశ్వర్ గౌడ్, కాకనూర్</span><span class="amt">₹40,000</span></li>
+          <li><span class="role" data-en="Bull race · 4th prize" data-te="బండలాగుట · నాల్గవ బహుమతి">Bull race · 4th prize</span><span class="nm" lang="te">గుండెగల్ల యాదగిరి (వార్డు మెంబరు); సభావత్ మున్యా నాయక్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹30,000</span></li>
+          <li><span class="role" data-en="Bull race · 5th prize" data-te="బండలాగుట · ఐదవ బహుమతి">Bull race · 5th prize</span><span class="nm" lang="te">కుమ్మరి బాల్‌రాజ్; బైకని స్వరూప – వెంకటయ్య యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹22,000</span></li>
+          <li><span class="role" data-en="Bull race · 6th prize" data-te="బండలాగుట · ఆరవ బహుమతి">Bull race · 6th prize</span><span class="nm" lang="te">దన్నెడి మహేష్ యాదవ్; దన్నెడి ప్రవీణ్ యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹15,000</span></li>
+          <li><span class="role" data-en="Decoration &amp; shawls" data-te="రంగలంకరణ &amp; శాలువలు">Decoration &amp; shawls</span><span class="nm" lang="te">కుమ్మరి నర్సింహ్మ, తండ్రి అంజయ్య, బైర్ఖాన్‌పల్లి</span><span class="amt">₹31,000</span></li>
+          <li><span class="role" data-en="Tractor-reverse contest" data-te="ట్రాక్టర్ రివర్స్ పందెం">Tractor-reverse contest</span><span class="nm" lang="te">కుమ్మరి రాజశేఖర్; కుమ్మరి చందు, బైర్ఖాన్‌పల్లి</span><span class="amt">₹10,000</span></li>
+          <li><span class="role" data-en="Utti &amp; onti-stambham" data-te="ఉట్లు &amp; ఒంటి స్థంభం">Utti &amp; onti-stambham</span><span class="nm" lang="te">లాదినేని వెంకటేశ్వర్ రావు, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+        </ul>
+
+        <h3 style="margin-top: var(--space-6)" data-en="Floral decoration donors" data-te="పూల అలంకరణ దాతలు">Floral decoration donors</h3>
+        <ul class="roll roll--multi">
+          <li><span class="nm" lang="te">ఎల్. యాదగిరి రావు, మాజీ సర్పంచ్</span><span class="amt">₹15,000</span></li>
+          <li><span class="nm" lang="te">ఇందుర్తి ప్రభాకర్ రావు</span><span class="amt">₹12,500</span></li>
+          <li><span class="nm" lang="te">మక్కూరి అంజయ్య యాదవ్ – యాదయ్య యాదవ్ – లక్ష్మయ్య యాదవ్</span><span class="amt">₹21,000</span></li>
+          <li><span class="nm" lang="te">బైకని రాఘవేందర్ యాదవ్</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">ఆది సత్యనారాయణ రావు, దిల్‌సుఖ్‌నగర్</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">సాకలి శేఖర్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+          <li><span class="nm" lang="te">డి. బాబు యాదవ్, బైర్ఖాన్‌పల్లి</span><span class="amt">₹5,000</span></li>
+        </ul>
+
+        <h3 style="margin-top: var(--space-6)" data-en="Donors in kind" data-te="వస్తు దాతలు">Donors in kind</h3>
+        <ul class="roll roll--roles">
+          <li><span class="role" data-en="Grain (2 quintals)" data-te="ధాన్యం (2 క్వింటాళ్లు)">Grain (2 quintals)</span><span class="nm" lang="te">పాలది జగన్ మోనయ్య గుప్త, కొల్కుళపడకల్</span><span class="amt">₹18,000</span></li>
+          <li><span class="role" data-en="Invitation printing" data-te="పత్రిక ముద్రణ">Invitation printing</span><span class="nm" lang="te">ప్యాడి ప్రో ట్రేడర్స్ – అగ్రి సొల్యూషన్స్, బైర్ఖాన్‌పల్లి</span></li>
+        </ul>
+
+        <p class="thanks-line" lang="te">వస్తు రూపేన మరియు ధన సహాయం చేసిన దాతలందరికీ ధన్యవాదములు 🙏</p>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation"><img src="assets/divider.svg" alt="" width="240" height="24"></div>
+
+    <section class="section" aria-label="Support the temple">
+      <div class="container measure-center flow" style="text-align:center">
+        <p data-lang="en">Would you like to be a donor for the coming Brahmotsavam? Every offering
+          supports the Swamy's seva.</p>
+        <p data-lang="te" lang="te" hidden>రాబోయే బ్రహ్మోత్సవానికి మీరూ దాతగా ఉండాలనుకుంటున్నారా?
+          ప్రతి కానుక స్వామివారి సేవకు తోడ్పడుతుంది.</p>
+        <p class="btn-row" style="justify-content:center">
+          <a class="btn btn--primary" href="donations.html" data-en="Donate · విరాళాలు" data-te="విరాళాలు · Donate">Donate · విరాళాలు</a>
+          <a class="btn btn--ghost" href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+<svg class="footer-skyline" viewBox="0 0 1600 110" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+  <g fill="#241014">
+    <!-- compound walls with lotus-bud coping -->
+    <path d="M0 92 H93 q5 -7 10 0 H293 q5 -7 10 0 H493 q5 -7 10 0 H693 q5 -7 10 0 H744 V110 H0 Z"/>
+    <path d="M856 92 H907 q5 -7 10 0 H1107 q5 -7 10 0 H1307 q5 -7 10 0 H1507 q5 -7 10 0 H1600 V110 H856 Z"/>
+    <!-- miniature stepped gopuram -->
+    <path d="M756 110 L763 72 L775 72 L781 48 L791 48 L795 30 C796 21 798 18 800 18 C802 18 804 21 805 30 L809 48 L819 48 L825 72 L837 72 L844 110 Z"/>
+    <!-- neem trees -->
+    <rect x="297" y="84" width="6" height="26"/>
+    <circle cx="300" cy="72" r="20"/>
+    <circle cx="285" cy="80" r="14"/>
+    <circle cx="316" cy="79" r="15"/>
+    <rect x="517" y="92" width="5" height="18"/>
+    <circle cx="520" cy="82" r="14"/>
+    <circle cx="509" cy="88" r="10"/>
+    <circle cx="532" cy="87" r="11"/>
+    <rect x="1237" y="84" width="6" height="26"/>
+    <circle cx="1240" cy="72" r="19"/>
+    <circle cx="1226" cy="80" r="13"/>
+    <circle cx="1255" cy="79" r="14"/>
+    <!-- village house -->
+    <path d="M1025 88 L1052 74 L1080 88 V110 H1025 Z"/>
+  </g>
+  <!-- gold kalasham tip on the gopuram -->
+  <g fill="none" stroke="#C9A227" stroke-width="1.4" stroke-linecap="round">
+    <path d="M800 16 V12"/>
+    <circle cx="800" cy="9" r="2.2"/>
+  </g>
+  <!-- the 1px ember horizon line -->
+  <rect x="0" y="108.5" width="1600" height="1.5" fill="#B85C24" opacity=".85"/>
+</svg>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Column 1 · seal + about + address -->
+      <div class="footer-col">
+        <p class="footer-seal">
+          <img src="assets/emblem.svg" alt="" width="38" height="38">
+          <span>
+            <span class="footer-seal__te" lang="te">శ్రీ గుంటుక లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+            <span class="footer-seal__en" lang="en">Bhairkhanpally Grama Devalayam</span>
+          </span>
+        </p>
+        <!-- Village name spelling confirmed as బైర్ఖాన్‌పల్లి (2026 Brahmotsavam invitation). -->
+        <p class="footer-about" data-lang="en">The village temple (grama devalayam) of Bhairkhanpally,
+          where Sri Guntuka Lakshmi Narasimha Swamy — the Lord in His peaceful form with Sri Lakshmi Devi —
+          is worshipped. Bhairkhanpally lies in Keshampet mandal, Ranga Reddy district, Telangana.</p>
+        <p class="footer-about" data-lang="te" lang="te" hidden>బైర్ఖాన్‌పల్లి గ్రామ దేవాలయం —
+          శ్రీ లక్ష్మీ దేవి సమేతంగా శాంత స్వరూపుడైన శ్రీ గుంటుక లక్ష్మీ నరసింహ స్వామివారు ఇక్కడ కొలువై ఉన్నారు.
+          బైర్ఖాన్‌పల్లి కేశంపేట మండలం, రంగారెడ్డి జిల్లా, తెలంగాణలో ఉంది.</p>
+        <address class="footer-address">
+          <span data-en="Sri Guntuka Lakshmi Narasimha Swamy Temple" data-te="శ్రీ గుంటుక లక్ష్మీ నరసింహ స్వామి దేవాలయం">Sri Guntuka Lakshmi Narasimha Swamy Temple</span><br>
+          <span data-en="Bhairkhanpally village, Keshampet mandal," data-te="బైర్ఖాన్‌పల్లి గ్రామం, కేశంపేట మండలం,">Bhairkhanpally village, Keshampet mandal,</span><br>
+          <span data-en="Ranga Reddy district, Telangana — 509408" data-te="రంగారెడ్డి జిల్లా, తెలంగాణ — 509408">Ranga Reddy district, Telangana — 509408</span>
+        </address>
+      </div>
+
+      <!-- Column 2 · quick links -->
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-col__title" data-en="Quick Links" data-te="త్వరిత లింకులు">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+          <li><a href="about.html" data-en="About the Temple" data-te="ఆలయ చరిత్ర">About the Temple</a></li>
+          <li><a href="timings.html" data-en="Darshan Timings" data-te="దర్శన వేళలు">Darshan Timings</a></li>
+          <li><a href="sevas.html" data-en="Sevas &amp; Poojas" data-te="సేవలు">Sevas &amp; Poojas</a></li>
+          <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+          <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+          <li><a href="donors.html" data-en="Donors &amp; Well-wishers" data-te="దాతలు">Donors &amp; Well-wishers</a></li>
+          <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+          <li><a href="visit.html" data-en="Plan Your Visit" data-te="దర్శనం">Plan Your Visit</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column 3 · darshan hours summary -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Darshan Hours" data-te="దర్శన వేళలు">Darshan Hours</h2>
+        <!-- EDIT-ME: These hours follow the daily schedule used across the site
+             (modeled on Yadadri/Mattapalli practice). Adjust once the committee
+             confirms this temple's actual timings — and keep timings.html in sync. -->
+        <ul class="footer-hours">
+          <li><span data-en="Morning:" data-te="ఉదయం:">Morning:</span> <span class="tnum">6:00 AM – 12:00 noon</span></li>
+          <li><span data-en="Evening:" data-te="సాయంత్రం:">Evening:</span> <span class="tnum">5:00 PM – 8:00 PM</span></li>
+        </ul>
+        <p><a href="timings.html" data-en="Full ritual schedule →" data-te="పూర్తి పూజా క్రమం →">Full ritual schedule →</a></p>
+      </div>
+
+      <!-- Column 4 · contact -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Contact" data-te="సంప్రదించండి">Contact</h2>
+        <ul class="footer-phones">
+          <!-- Temple contacts (published in the 2026 Brahmotsavam invitation). -->
+          <li>
+            <a class="footer-phone" href="tel:+918978172136">
+              <span class="footer-phone__label" data-en="Temple priest:" data-te="అర్చకులు:">Temple priest:</span>
+              <span>+91 89781 72136</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-phone" href="tel:+919440928385">
+              <span class="footer-phone__label" data-en="Temple committee:" data-te="ఆలయ కమిటీ:">Temple committee:</span>
+              <span>+91 94409 28385</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-phone" href="https://wa.me/919618054672?text=Namaskaram%2C%20I%20want%20to%20know%20about%20sevas%20at%20Sri%20Guntuka%20Lakshmi%20Narasimha%20Swamy%20Temple%2C%20Bhairkhanpally.">
+              <svg class="wa-glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#25D366" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.2-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.2-6.1-5.4-.2-.2-1.5-1.9-1.5-3.7 0-1.8 1-2.7 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+              <span class="footer-phone__label" data-en="WhatsApp:" data-te="వాట్సాప్:">WhatsApp:</span>
+              <span>+91 96180 54672</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Sri Narasimha Gayatri — the footer's sloka (one placement, per spec) -->
+    <div class="footer-sloka">
+      <p class="footer-sloka__sa" lang="sa">ॐ वज्रनखाय विद्महे तीक्ष्णदंष्ट्राय धीमहि ।<br>तन्नो नारसिंहः प्रचोदयात् ॥</p>
+      <span class="footer-sloka__tr" lang="en">May we know the Lord of adamantine nails; may we meditate on Him of sharp fangs.
+        May that Lord Narasimha illumine our intellect.</span>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span>
+        <span data-en="Sri Guntuka Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved."
+              data-te="శ్రీ గుంటుక లక్ష్మీ నరసింహ స్వామి దేవాలయ కమిటీ, బైర్ఖాన్‌పల్లి (గ్రామ దేవాలయం). సర్వ హక్కులు కమిటీవే.">Sri Guntuka Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved.</span></p>
+      <p class="small"
+         data-en="Seva, timing and festival details on this site are maintained by the temple committee."
+         data-te="ఈ సైట్‌లోని సేవలు, దర్శన వేళలు, ఉత్సవ వివరాలు ఆలయ కమిటీ నిర్వహణలో ఉంటాయి.">Seva, timing and festival details on this site are maintained by the temple committee.</p>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>
