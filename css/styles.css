@@ -562,6 +562,21 @@ strong { font-weight: 700; }
   pointer-events: none;
 }
 .hero__art img, .hero__art svg { width: 100%; height: auto; }
+/* Photo hero: a full-cover temple photograph with a twilight scrim so the
+   gold/ivory hero text stays legible and the image fades into the page. */
+.hero__art--photo { inset: 0; }
+.hero__art--photo img { height: 100%; object-fit: cover; object-position: center 34%; }
+.hero__art--photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(51, 18, 26, .80) 0%,
+    rgba(51, 18, 26, .42) 26%,
+    rgba(51, 18, 26, .34) 50%,
+    rgba(51, 18, 26, .60) 78%,
+    var(--maroon-deep) 100%);
+}
 
 .hero__content {
   position: relative;
@@ -1048,6 +1063,32 @@ strong { font-weight: 700; }
   font-size: .8125rem;
   color: var(--ink-soft);
   padding: .4rem .15rem 0;
+}
+
+/* Video gallery (gallery.html) — click-to-play HTML5 <video> with a poster
+   frame. Mixed portrait/landscape clips fit into a calm responsive grid. */
+.video-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+  margin-top: var(--space-4);
+  align-items: start;
+}
+@media (min-width: 720px) { .video-grid { grid-template-columns: repeat(2, 1fr); } }
+.video-figure { margin: 0; }
+.video-figure .video-player {
+  display: block;
+  width: 100%;
+  height: auto;                 /* keep each clip's own aspect (portrait/landscape) */
+  background: #0d0608;
+  border: var(--hairline);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-relief);
+}
+.video-figure figcaption {
+  font-size: .8125rem;
+  color: var(--ink-soft);
+  padding: .5rem .15rem 0;
 }
 
 .lightbox {

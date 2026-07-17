@@ -3,19 +3,18 @@
      gallery.html — Photo Gallery (ఫోటో గ్యాలరీ)
      Sri Guntuka Lakshmi Narasimha Swamy Temple, Bhairkhanpally
      Uses ONLY classes from css/styles.css — no page-scoped <style> additions.
-     No photographs of this temple exist yet, so each tile is a hand-authored
-     SVG illustration in the site's own engraving style (assets/gallery/*.svg),
-     standing in HONESTLY for the photograph that will replace it. There are no
-     "coming soon" shells and no stock images (STYLEGUIDE §6.10, §10.4).
+     Tiles are real photographs of the temple (assets/photos/*.jpg): the gopuram,
+     the garlanded moolavirat, the mandapam and the temple grounds. The lightbox
+     opens each figure's <a href> full image. No stock images (STYLEGUIDE §6.10).
      ======================================================================== -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Photo Gallery · Sri Guntuka Lakshmi Narasimha Swamy Temple, Bhairkhanpally</title>
-  <meta name="description" content="A gallery of Sri Guntuka Lakshmi Narasimha Swamy Temple, Bhairkhanpally — the gopuram, deeparadhana, the annual Rathotsavam and more. Illustrated in the temple's own style until devotees' photographs take their place.">
+  <meta name="description" content="A photo gallery of Sri Guntuka Lakshmi Narasimha Swamy Temple, Bhairkhanpally — the gopuram and its roofline deities, the garlanded moolavirat in the sanctum, the painted mandapam and the temple grounds.">
   <meta property="og:title" content="Photo Gallery · శ్రీ గుంటుక లక్ష్మీ నరసింహ స్వామి దేవాలయం, Bhairkhanpally">
-  <meta property="og:description" content="The gopuram, the sanctum, deeparadhana and the annual Jatara of the village temple — with an invitation to devotees to share their own photographs.">
+  <meta property="og:description" content="Photographs of the village temple of Sri Guntuka Lakshmi Narasimha Swamy — the gopuram, the garlanded moolavirat in the sanctum, the painted mandapam and the temple grounds.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,13 +126,12 @@
         </div>
 
         <div class="measure">
-          <p data-lang="en">Photographs of Sri Lakshmi Narasimha Swamy and His temple are being
-            gathered. Until they are ready, each frame below is a hand-drawn illustration in the
-            temple's own style — an honest placeholder for the photograph that will one day take its
-            place. Tap any frame to view it larger.</p>
-          <p data-lang="te" lang="te" hidden>శ్రీ లక్ష్మీ నరసింహ స్వామివారి, ఆలయ ఫోటోలు
-            సేకరించబడుతున్నాయి. అవి సిద్ధమయ్యే వరకు, కింది ప్రతి చిత్రం ఆలయ శైలిలో గీసిన కళాకృతి —
-            త్వరలో దాని స్థానంలో నిజమైన ఫోటో వస్తుంది. పెద్దగా చూడటానికి ఏ చిత్రాన్నైనా తాకండి.</p>
+          <p data-lang="en">Photographs of Sri Lakshmi Narasimha Swamy and His temple — the gopuram
+            and its roofline deities, the garlanded moolavirat in the sanctum, the painted mandapam
+            and the temple grounds. Tap any picture to view it larger.</p>
+          <p data-lang="te" lang="te" hidden>శ్రీ లక్ష్మీ నరసింహ స్వామివారి, ఆలయ ఫోటోలు —
+            గోపురం, గర్భగుడిలోని పూలమాలలతో అలంకరించిన మూలవిరాట్టు, మండపం, ఆలయ ప్రాంగణం. పెద్దగా
+            చూడటానికి ఏ చిత్రాన్నైనా తాకండి.</p>
         </div>
 
         <!-- EDIT-ME (whole gallery): To publish real photographs, replace the file in BOTH the
@@ -144,77 +142,60 @@
              file in assets/gallery/. Photos of people should be published only with their consent. -->
         <div class="gallery-grid" data-gallery>
 
-          <!-- EDIT-ME: replace 01-gopuram.svg with a photo of the temple gopuram / entrance tower. -->
           <figure class="gallery-figure reveal">
-            <a class="gallery-item" href="assets/gallery/01-gopuram.svg">
-              <img src="assets/gallery/01-gopuram.svg" alt="Illustration of the temple gopuram silhouetted against the dusk sky — placeholder for a photograph" loading="lazy" width="800" height="600">
+            <a class="gallery-item" href="assets/photos/gopuram.jpg">
+              <img src="assets/photos/gopuram.jpg" alt="The white gopuram of the temple with colourful deities along its roofline against a blue sky" loading="lazy" width="800" height="600">
             </a>
             <figcaption data-en="The Temple Gopuram" data-te="ఆలయ గోపురం">The Temple Gopuram</figcaption>
           </figure>
 
-          <!-- EDIT-ME: replace 02-prabhavali.svg with a photo of the moolavirat (sanctum deity),
-               used only with the archakulu's / committee's permission. -->
           <figure class="gallery-figure reveal">
-            <a class="gallery-item" href="assets/gallery/02-prabhavali.svg">
-              <img src="assets/gallery/02-prabhavali.svg" alt="Illustration of the sanctum arch enshrining the sacred flame — placeholder for a photograph of the moolavirat" loading="lazy" width="800" height="600">
+            <a class="gallery-item" href="assets/photos/moolavirat.jpg">
+              <img src="assets/photos/moolavirat.jpg" alt="The moolavirat of Sri Lakshmi Narasimha Swamy on the silver prabhavali in the sanctum, adorned with flower garlands" loading="lazy" width="800" height="600" style="object-position:center 32%">
             </a>
-            <figcaption data-en="Moolavirat — Sri Lakshmi Narasimha Swamy" data-te="మూలవిరాట్ — శ్రీ లక్ష్మీ నరసింహ స్వామి">Moolavirat — Sri Lakshmi Narasimha Swamy</figcaption>
+            <figcaption data-en="Moolavirat — Sri Lakshmi Narasimha Swamy" data-te="మూలవిరాట్టు — శ్రీ లక్ష్మీ నరసింహ స్వామి">Moolavirat — Sri Lakshmi Narasimha Swamy</figcaption>
           </figure>
 
-          <!-- EDIT-ME: replace 03-kalasham.svg with a photo of the vimana kalasham / temple crest. -->
           <figure class="gallery-figure reveal">
-            <a class="gallery-item" href="assets/gallery/03-kalasham.svg">
-              <img src="assets/gallery/03-kalasham.svg" alt="Illustration of a golden kalasham with mango leaves and coconut — placeholder for a photograph" loading="lazy" width="800" height="600">
+            <a class="gallery-item" href="assets/photos/moolavirat-swayambhu.jpg">
+              <img src="assets/photos/moolavirat-swayambhu.jpg" alt="The swayambhu moolavirat in the rock sanctum, garlanded, with the natural stone of the cave behind" loading="lazy" width="800" height="600" style="object-position:center 30%">
             </a>
-            <figcaption data-en="The Vimana Kalasham" data-te="విమాన కలశం">The Vimana Kalasham</figcaption>
+            <figcaption data-en="The Swayambhu Moolavirat" data-te="స్వయంభూ మూలవిరాట్టు">The Swayambhu Moolavirat</figcaption>
           </figure>
 
-          <!-- EDIT-ME: replace 04-deepam.svg with a photo of deeparadhana / the evening harathi. -->
           <figure class="gallery-figure reveal">
-            <a class="gallery-item" href="assets/gallery/04-deepam.svg">
-              <img src="assets/gallery/04-deepam.svg" alt="Illustration of a row of lit oil lamps for deeparadhana — placeholder for a photograph" loading="lazy" width="800" height="600">
+            <a class="gallery-item" href="assets/photos/mandapam.jpg">
+              <img src="assets/photos/mandapam.jpg" alt="The temple mandapam with painted pillars and a lotus-painted ceiling" loading="lazy" width="800" height="600">
             </a>
-            <figcaption data-en="Deeparadhana" data-te="దీపారాధన">Deeparadhana</figcaption>
+            <figcaption data-en="The Temple Mandapam" data-te="ఆలయ మండపం">The Temple Mandapam</figcaption>
           </figure>
 
-          <!-- EDIT-ME: replace 05-lotus.svg with a photo of the temple tank / kolanu, or a floral alankaram. -->
           <figure class="gallery-figure reveal">
-            <a class="gallery-item" href="assets/gallery/05-lotus.svg">
-              <img src="assets/gallery/05-lotus.svg" alt="Illustration of a lotus in bloom, the seat of Sri Lakshmi — placeholder for a photograph" loading="lazy" width="800" height="600">
+            <a class="gallery-item" href="assets/photos/anjaneya-gopuram.jpg">
+              <img src="assets/photos/anjaneya-gopuram.jpg" alt="A figure of Sri Anjaneya on the temple roofline beside the golden dhwaja stambham" loading="lazy" width="800" height="600">
             </a>
-            <figcaption data-en="The Lotus — Seat of Sri Lakshmi" data-te="కమలం — శ్రీ లక్ష్మీ ఆసనం">The Lotus — Seat of Sri Lakshmi</figcaption>
+            <figcaption data-en="Sri Anjaneya on the Gopuram" data-te="గోపురంపై శ్రీ ఆంజనేయస్వామి">Sri Anjaneya on the Gopuram</figcaption>
           </figure>
 
-          <!-- EDIT-ME: replace 06-ratham.svg with a photo of the annual Rathotsavam (chariot procession). -->
           <figure class="gallery-figure reveal">
-            <a class="gallery-item" href="assets/gallery/06-ratham.svg">
-              <img src="assets/gallery/06-ratham.svg" alt="Illustration of the temple chariot in procession during Rathotsavam — placeholder for a photograph" loading="lazy" width="800" height="600">
+            <a class="gallery-item" href="assets/photos/temple-prangana.jpg">
+              <img src="assets/photos/temple-prangana.jpg" alt="The temple precinct with its saffron flag flying over the shrine" loading="lazy" width="800" height="600">
             </a>
-            <figcaption data-en="Rathotsavam — The Jatara" data-te="రథోత్సవం — జాతర">Rathotsavam — The Jatara</figcaption>
+            <figcaption data-en="The Temple Precinct" data-te="ఆలయ ప్రాంగణం">The Temple Precinct</figcaption>
           </figure>
 
-          <!-- EDIT-ME: replace 07-ghanta.svg with a photo of the temple bell / a ritual moment. -->
           <figure class="gallery-figure reveal">
-            <a class="gallery-item" href="assets/gallery/07-ghanta.svg">
-              <img src="assets/gallery/07-ghanta.svg" alt="Illustration of the temple bell rung at the time of aarti — placeholder for a photograph" loading="lazy" width="800" height="600">
+            <a class="gallery-item" href="assets/photos/utsava-maidan.jpg">
+              <img src="assets/photos/utsava-maidan.jpg" alt="The open festival grounds beside the temple where the jatara is held" loading="lazy" width="800" height="600">
             </a>
-            <figcaption data-en="The Temple Bell" data-te="ఆలయ గంట">The Temple Bell</figcaption>
+            <figcaption data-en="The Festival Grounds" data-te="ఉత్సవ మైదానం">The Festival Grounds</figcaption>
           </figure>
 
-          <!-- EDIT-ME: replace 08-tulasi.svg with a photo of the tulasi brindavanam in the temple courtyard. -->
           <figure class="gallery-figure reveal">
-            <a class="gallery-item" href="assets/gallery/08-tulasi.svg">
-              <img src="assets/gallery/08-tulasi.svg" alt="Illustration of a tulasi plant in its brindavanam — placeholder for a photograph" loading="lazy" width="800" height="600">
+            <a class="gallery-item" href="assets/photos/shila-mandiram.jpg">
+              <img src="assets/photos/shila-mandiram.jpg" alt="An old stone-arch shrine in the temple surroundings" loading="lazy" width="800" height="600">
             </a>
-            <figcaption data-en="Tulasi Brindavanam" data-te="తులసి బృందావనం">Tulasi Brindavanam</figcaption>
-          </figure>
-
-          <!-- EDIT-ME: replace 09-shankha-chakra.svg with a photo of the temple's Shankha–Chakra / dhwaja sthambham. -->
-          <figure class="gallery-figure reveal">
-            <a class="gallery-item" href="assets/gallery/09-shankha-chakra.svg">
-              <img src="assets/gallery/09-shankha-chakra.svg" alt="Illustration of the Vaishnava emblems — shankha, chakra and the tirunamam — placeholder for a photograph" loading="lazy" width="800" height="600">
-            </a>
-            <figcaption data-en="Shankham &amp; Chakram" data-te="శంఖం &amp; చక్రం">Shankham &amp; Chakram</figcaption>
+            <figcaption data-en="The Old Stone Shrine" data-te="పురాతన శిలా మందిరం">The Old Stone Shrine</figcaption>
           </figure>
 
         </div>
@@ -226,12 +207,64 @@
     </div>
 
     <!-- ==================================================================
-         02 · PHOTO SEVA — invitation to contribute photographs
+         02 · VIDEO — Brahmotsavam footage (HTML5 <video>, click-to-play).
+         Videos are real footage of the temple's festival; posters are the
+         first frame. preload="none" so nothing downloads until the user taps.
+         ================================================================== -->
+    <section class="section" aria-labelledby="video-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">02</span> · వీడియోలు — Video</span>
+          <h2 class="section__title" id="video-title" data-en="Video" data-te="వీడియోలు">Video</h2>
+          <span class="section__sub" lang="te">బ్రహ్మోత్సవ దృశ్యాలు</span>
+        </div>
+
+        <div class="measure">
+          <p data-lang="en">Moments from the temple's Brahmotsavam — the night chariot procession
+            and the festival gatherings in the village. Tap play to watch.</p>
+          <p data-lang="te" lang="te" hidden>ఆలయ బ్రహ్మోత్సవ దృశ్యాలు — రాత్రి చిన్న రథం యాత్ర,
+            గ్రామంలో ఉత్సవ సందడి. చూడటానికి ప్లే నొక్కండి.</p>
+        </div>
+
+        <div class="video-grid">
+          <figure class="video-figure reveal">
+            <video class="video-player" controls preload="none" playsinline
+                   poster="assets/video/posters/ratham-night.jpg" width="464" height="832">
+              <source src="assets/video/ratham-night.mp4" type="video/mp4">
+            </video>
+            <figcaption data-en="Rathotsavam — the night chariot procession" data-te="రథోత్సవం — రాత్రి చిన్న రథం యాత్ర">Rathotsavam — the night chariot procession</figcaption>
+          </figure>
+
+          <figure class="video-figure reveal">
+            <video class="video-player" controls preload="none" playsinline
+                   poster="assets/video/posters/brahmotsavam-gathering.jpg" width="816" height="464">
+              <source src="assets/video/brahmotsavam-gathering.mp4" type="video/mp4">
+            </video>
+            <figcaption data-en="Devotees gather for the Brahmotsavam" data-te="బ్రహ్మోత్సవ వేడుకలో భక్తుల సందడి">Devotees gather for the Brahmotsavam</figcaption>
+          </figure>
+
+          <figure class="video-figure reveal">
+            <video class="video-player" controls preload="none" playsinline
+                   poster="assets/video/posters/sitarama-kalyanam.jpg" width="480" height="848">
+              <source src="assets/video/sitarama-kalyanam.mp4" type="video/mp4">
+            </video>
+            <figcaption data-en="Sri Sita Ramula Kalyanam in the village" data-te="గ్రామంలో శ్రీ సీతారాముల కల్యాణం">Sri Sita Ramula Kalyanam in the village</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation">
+      <img src="assets/divider.svg" alt="" width="240" height="24">
+    </div>
+
+    <!-- ==================================================================
+         03 · PHOTO SEVA — invitation to contribute photographs
          ================================================================== -->
     <section class="section" aria-labelledby="photoseva-title">
       <div class="container">
         <div class="section__head reveal">
-          <span class="kicker"><span class="kicker__num">02</span> · ఫోటో సేవ — Share Your Photos</span>
+          <span class="kicker"><span class="kicker__num">03</span> · ఫోటో సేవ — Share Your Photos</span>
           <h2 class="section__title" id="photoseva-title" data-en="A Photo Seva" data-te="ఫోటో సేవ">A Photo Seva</h2>
           <span class="section__sub" lang="te">మీ చిత్రాలను పంచుకోండి</span>
         </div>
